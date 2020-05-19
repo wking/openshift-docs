@@ -21,6 +21,8 @@ ifndef::openshift-origin[]
 * `stable-{product-version}`
 * `eus-4.6` (only available when running 4.6)
 
+You can also configure an empty channel to tell the Cluster Version Operator to not fetch available updates from the upgrade recommendation service (for example, because your cluster has restricted network access and there is no local, reachable upgrade recommendation service).  You can configure an empty channel with the `oc adm upgrade channel` command from the OpenShift CLI.
+
 endif::openshift-origin[]
 ifdef::openshift-origin[]
 {product-title} {product-version} offers the following upgrade channel:
